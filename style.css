@@ -1,0 +1,353 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+.btn {
+  width: 200px;
+  height: 63px;
+  text-decoration: none;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  display: inline-block;
+  text-align: center;
+  line-height: 63px;
+  border-radius: 10px;
+  vertical-align: middle;
+}
+
+.filled {
+  background-color: #9b3ff8;
+  color: white;
+  font-weight: 800;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.filled:hover {
+  background-color: #504ec7;
+  color: #ffff;
+}
+
+.stroke {
+  border: 2px solid black;
+  font-weight: 600;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.stroke:hover {
+  background-color: #000;
+  color: white;
+}
+
+.box {
+  width: 50%;
+  height: 100%;
+  background-color: #e0e0e0;
+}
+
+@-webkit-keyframes slideDown {
+  from {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: rotateZ(0);
+    transform: rotateZ(0);
+  }
+  20% {
+    -webkit-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+  }
+  40% {
+    -webkit-transform: rotateZ(-45deg);
+    transform: rotateZ(-45deg);
+  }
+  60% {
+    -webkit-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+  }
+  80% {
+    -webkit-transform: rotateZ(-45deg);
+    transform: rotateZ(-45deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(0);
+    transform: rotateZ(0);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: rotateZ(0);
+    transform: rotateZ(0);
+  }
+  20% {
+    -webkit-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+  }
+  40% {
+    -webkit-transform: rotateZ(-45deg);
+    transform: rotateZ(-45deg);
+  }
+  60% {
+    -webkit-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+  }
+  80% {
+    -webkit-transform: rotateZ(-45deg);
+    transform: rotateZ(-45deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(0);
+    transform: rotateZ(0);
+  }
+}
+
+@-webkit-keyframes drop {
+  from {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  to {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+
+@keyframes drop {
+  from {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  to {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+
+header {
+  font-family: "Baloo Tamma 2", cursive;
+  height: 79px;
+  z-index: 999;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+header .container .logo {
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+header .container .logo img {
+  width: 200px;
+  height: 200px;
+  margin-top: 100px;
+}
+
+header .container nav {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 45%;
+  padding-right: 350px;
+}
+
+header .container nav a {
+  color: #333279;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header .container nav a:hover {
+  color: #8829e8;
+}
+
+header .container nav a.active {
+  color: #8829e8;
+}
+
+header .hamburger-btn {
+  display: none;
+}
+
+header .hamburger-btn img {
+  position: absolute;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  -webkit-transition: opacity 0.3s ease-in;
+  transition: opacity 0.3s ease-in;
+}
+
+header .hamburger-btn img.transparent {
+  opacity: 0;
+}
+
+header.slide .container a {
+  color: white;
+  font-weight: 300;
+}
+
+header.hide {
+  position: -webkit-sticky;
+  position: sticky;
+  top: -100px;
+}
+.navbar-brand{
+  margin-left: 100px;
+  font-weight: 600;
+}
+#navbarNav{
+  margin-left: 450px;
+}
+.home {
+  padding-top: 120px;
+  height: 100%;
+}
+
+.home .container {
+  width: 80%;
+  margin: 0 auto;
+  font-family: "Raleway", sans-serif;
+}
+
+.home .container .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+
+.home .container .description .intro h2 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+.home .container .description p{
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+.home .container .description .picture img {
+  max-width: 550px;
+  max-height: 430px;
+}
+
+.home .container .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.home .container .buttons a {
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.home .container .buttons a:nth-child(1) i {
+  -webkit-animation: drop 0.7s alternate infinite;
+  animation: drop 0.7s alternate infinite;
+}
+
+.portfolio {
+  margin-top: 200px;
+  background: -webkit-gradient(linear, right top, left top, from(#504ec7), to(#ea19ee));
+  background: linear-gradient(-90deg, #504ec7, #ea19ee);
+  padding-bottom: 50px;
+}
+
+.portfolio .container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.portfolio .container h1 {
+  font-size: 4vw;
+  padding-top: 70px;
+  color: #e0e0e0;
+  font-family: "Raleway", sans-serif;
+}
+
+.portfolio .container .work {
+  margin-top: 40px;
+  width: 100%;
+  position: relative;
+}
+
+.portfolio .container .work .image {
+  width: 100%;
+}
+
+.portfolio .container .work .image img {
+  -webkit-box-shadow: 0 20px 10px -10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 20px 10px -10px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-height: 1000px;
+  border-radius: 20px;
+}
+
+.portfolio .container .work:hover .content-box {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-box-shadow: 0 40px 20px -20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 40px 20px -20px rgba(0, 0, 0, 0.2);
+}
+
+/*# sourceMappingURL=style.css.map */
